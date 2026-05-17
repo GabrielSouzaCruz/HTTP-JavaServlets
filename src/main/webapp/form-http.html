@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-PT">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário POST</title>
+    
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+<body style="background-color: #f9f9f9; padding-top: 50px;">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-6 col-md-offset-3">
+                <div class="panel panel-success">
+                    <div class="panel-heading">
+                        <h3 class="panel-title"><b>Servlet 2: Envio de Dados via POST</b></h3>
+                    </div>
+                    <div class="panel-body">
+                        
+                        <form action="app/request-body" method="POST">
+                            <div class="form-group">
+                                <label for="nome">Nome:</label>
+                                <input type="text" class="form-control" id="nome" name="nome" placeholder="Introduza o seu nome" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="email">E-mail:</label>
+                                <input type="email" class="form-control" id="email" name="email" placeholder="Introduza o seu e-mail" required>
+                            </div>
+                            
+                            <div class="form-group">
+                                <label for="mensagem">Mensagem:</label>
+                                <textarea class="form-control" id="mensagem" name="mensagem" rows="4" placeholder="Escreva a sua mensagem aqui..." required></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-success btn-block">Enviar via POST</button>
+                        </form>
+                        
+                    </div>
+                    <div class="panel-footer text-center">
+                        <a href="index.jsp" class="btn btn-default btn-sm">Voltar ao Dashboard</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
